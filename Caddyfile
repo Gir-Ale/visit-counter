@@ -5,4 +5,7 @@ student10.wt.thomasjuldo.com {
 	handle {
 		reverse_proxy site:80
 	}
+	handle_path /music/* {
+    		reverse_proxy algscr:3000
+	}
 }
